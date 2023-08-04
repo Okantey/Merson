@@ -4,6 +4,9 @@ import { TextInput } from 'react-native-web'
 import { AntDesign } from '@expo/vector-icons';
 
 const Verify = () => {
+  const handleNavigation = () => {
+    navigation.navigate("VerifyCode")
+  }
 
   return (
     <SafeAreaView style={
@@ -35,7 +38,7 @@ const Verify = () => {
           </View>
           <TextInput style={styles.inputTwo} type="number" placeholder="(480) 555-0103" />
         </View>
-        <TouchableOpacity style={styles.sendCode}>
+        <TouchableOpacity style={styles.sendCode} onPress={handleNavigation}>
           <Text style={styles.sendCodeText}>Send Code</Text>
         </TouchableOpacity>
         <View style={styles.inputZone}>
