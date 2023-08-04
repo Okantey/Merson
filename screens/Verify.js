@@ -3,7 +3,7 @@ import { SafeAreaView, View, Text, StyleSheet, TouchableOpacity } from 'react-na
 import { TextInput } from 'react-native-web'
 import { AntDesign } from '@expo/vector-icons';
 
-const Verify = () => {
+const Verify = ({ navigation }) => {
   const handleNavigation = () => {
     navigation.navigate("VerifyCode")
   }
