@@ -32,17 +32,12 @@ const App = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name="Home" component={Home} title="Home" options={{
+        {/* <Stack.Screen name="Home" component={Home} title="Home" options={{
           headerShown: false
         }} />
         <Stack.Screen name="Verify" component={Verify} options={{
           headerShown: true,
           title: "Continue with phone",
-          headerStyle: {
-            backgroundColor: "#009951",
-
-          },
-          headerTintColor: "white",
           headerTitleAlign: "center",
           headerTitleStyle: {
             fontSize: 25,
@@ -54,11 +49,6 @@ const App = () => {
         <Stack.Screen name="VerifyCode" component={VerifyCode} options={{
           headerShown: true,
           title: "Verify Phone",
-          headerStyle: {
-            backgroundColor: "#009951",
-
-          },
-          headerTintColor: "white",
           headerTitleAlign: "center",
           headerTitleStyle: {
             fontSize: 25,
@@ -66,16 +56,13 @@ const App = () => {
             fontFamily: "poppins-regular"
 
           }
-        }} />
+        }} /> */}
         <Stack.Screen name="Landing" component={Landing} options={{
           headerShown: false,
-          title: "Continue with phone",
           headerStyle: {
             backgroundColor: "#009951",
 
           },
-          headerTintColor: "white",
-          headerTitleAlign: "center",
           headerTitleStyle: {
             fontSize: 25,
             fontWeight: "bold",
